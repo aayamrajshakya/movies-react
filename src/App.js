@@ -1,9 +1,10 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import Header from "./components/Header";
 import SearchBar from "./components/SearchBar";
 import SearchResult from "./components/SearchResult";
 import Movies from "./components/Movies";
 import useFetchMovies from "./components/FetchMovies";
+import Footer from "./components/Footer";
 
 const menuItems = [
   "HOME",
@@ -43,6 +44,7 @@ export default function App() {
         setCurrentSelection={setCurrentSelection}
       />
       <Movies movies={upcoming} title={"Coming Soon"} />
+      <Footer/>
     </div>
   );
 }
